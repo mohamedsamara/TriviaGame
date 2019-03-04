@@ -111,7 +111,9 @@ $(document).ready(function() {
       $('.answer').html('Incorrect answer! correct answer is: ' + answer);
       stop();
       incorrectAnswer++;
-      nextQuestion();
+      setTimeout(function() {
+        nextQuestion();
+      }, 4000);
     }
   };
 
